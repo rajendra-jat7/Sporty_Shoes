@@ -29,7 +29,7 @@ public class EcommerceApplication {
             productService.save(new Product(5L, "Puma Shoes", 3.00, "https://rukminim1.flixcart.com/image/434/521/khkvukw0-0/shoe/h/z/0/37192808-10-puma-black-sharp-green-original-imafxka6fxytfhah.jpeg?q=50"));
             productService.save(new Product(6L, "Adidas Shoes", 500.00, "https://rukminim1.flixcart.com/image/434/521/kl9rssw0/shoe/z/y/e/7-hkk23-adidas-dovgry-ftwwht-hazyel-original-imagyfkg7g7y26ys.jpeg?q=50"));
 
-            Stream.of("Rajendra", "Ajay", "Praveen", "Ramraj", "Rajan").forEach(name -> {
+            Stream.of("Rajendra", "Ajay", "Ramraj", "Praveen", "Rajan").forEach(name -> {
                 User user = new User(name, name.toLowerCase() + "@gmail.com");
                 userRepository.save(user);
             });
